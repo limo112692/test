@@ -1,21 +1,48 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-
-<video width="400" controls>
-  <source src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH" type="video/mp4">
-
-  Your browser does not support HTML video.
-</video>
-
-
-<iframe src="https://drive.google.com/file/d/1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH/preview" width="640" height="480" allow="autoplay"></iframe>
-<p>
-Video courtesy of 
-<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
-</p>
-
-</body> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>影片撥放清單</title>
+</head>
+<body>
+    <h1>影片撥放清單</h1>
+    
+    <ul id="playlist">
+        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片1</li>
+        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片2</li>
+        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片3</li>
+    </ul>
+    
+    <video id="videoPlayer" controls>
+        <source id="videoSource" src="" type="video/mp4" preload="none">
+        Your browser does not support the video tag.
+    </video>
+    
+    <script>
+        var playlist = document.getElementById('playlist');
+        var videoPlayer = document.getElementById('videoPlayer');
+        var videoSource = document.getElementById('videoSource');
+        
+        var videos = playlist.getElementsByTagName('li');
+        var currentVideoIndex = 0;
+        
+        // 初始化，播放第一個影片
+        videoSource.src = videos[currentVideoIndex].getAttribute('data-src');
+        videoPlayer.load();
+        videoPlayer.play();
+        
+        // 監聽影片播放完畢事件
+        videoPlayer.addEventListener('ended', function() {
+            currentVideoIndex++;
+            if (currentVideoIndex < videos.length) {
+                videoSource.src = videos[currentVideoIndex].getAttribute('data-src');
+				
+                videoPlayer.load();
+                videoPlayer.play();
+            } else {
+                // 清單播放完畢
+                alert('播放清單已結束。');
+            }
+        });
+    </script>
+</body>
 </html>
-
-
