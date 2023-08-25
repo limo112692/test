@@ -3,13 +3,270 @@
 <head>
     <title>影片撥放清單</title>
 </head>
+<style type="text/css">
+
+
+</style>
 <body>
     <h1>影片撥放清單</h1>
     
     <ul id="playlist">
-        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片1</li>
-        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片2</li>
-        <li data-src="https://drive.google.com/uc?export=download&id=1X_h-5g1nayT5_kTqw88vkJtQdz0CRyFH">影片3</li>
+		<li data-index="0" data-src="https://drive.google.com/uc?export=download&id=1bu5QKTNG-HyB2vF83zvOMGOpkW_pnEtd" onclick="myMsg(this)">202106-IC語彙車（一）.mp4</li>
+		<li data-index="1" data-src="https://drive.google.com/uc?export=download&id=1pVcIKgqGgDlGTPV82ik6J-3dVub6yBHE" onclick="myMsg(this)">202106-IC語彙車（二）.mp4</li>
+		<li data-index="2" data-src="https://drive.google.com/uc?export=download&id=1NmdgrYby_ckBGVZnmaXjNOodjV3z5-8w" onclick="myMsg(this)">202106-Mommy Daddy.mp4</li>
+		<li data-index="3" data-src="https://drive.google.com/uc?export=download&id=1Nxli8mPBuQBOTn9RoWDrgP3OWsXcuR2X" onclick="myMsg(this)">202106-大象（一）.mp4</li>
+		<li data-index="4" data-src="https://drive.google.com/uc?export=download&id=1Mr2jpvybLHfLOckEos_m8DSImRf7WmC1" onclick="myMsg(this)">202106-大象（二）.mp4</li>
+		<li data-index="5" data-src="https://drive.google.com/uc?export=download&id=1tlu1lIi6jTHMk_zTYt5jkZrp48XEGCoC" onclick="myMsg(this)">202106-寶貝搖搖.mp4</li>
+		<li data-index="6" data-src="https://drive.google.com/uc?export=download&id=1tFfCpZxLqo1IzHs7hCFr937sR28BR2oU" onclick="myMsg(this)">202106-獅子.mp4</li>
+		<li data-index="7" data-src="https://drive.google.com/uc?export=download&id=1qPQobDI8Y2i-TfJWgUVWSVHyoi_UZjTe" onclick="myMsg(this)">202106-玩躲貓貓.mp4</li>
+		<li data-index="8" data-src="https://drive.google.com/uc?export=download&id=1osZywq8chj5CbbaXaMRPCH2Dv53Ah4ne" onclick="myMsg(this)">202106-睡覺前要刷牙.mp4</li>
+		<li data-index="9" data-src="https://drive.google.com/uc?export=download&id=177pr37SAxoIyaejm7TQrJNpUAG2GkTok" onclick="myMsg(this)">202106-綿羊.mp4</li>
+		<li data-index="10" data-src="https://drive.google.com/uc?export=download&id=1Ii8MGuLq-kARrwkziSrhuZy-GP4mg21g" onclick="myMsg(this)">202107-Bye-bye.mp4</li>
+		<li data-index="11" data-src="https://drive.google.com/uc?export=download&id=1i9BjSPeHebL7pQ_-j48g5G79L-KXRwN8" onclick="myMsg(this)">202107-企鵝（一）.mp4</li>
+		<li data-index="12" data-src="https://drive.google.com/uc?export=download&id=1NBJqc6pR7FpwsCG2sa8gtFm1V8yZDiqz" onclick="myMsg(this)">202107-企鵝（二）.mp4</li>
+		<li data-index="13" data-src="https://drive.google.com/uc?export=download&id=1RD8nG9cy-JclG5GvzBNF8s3VrReUsEQM" onclick="myMsg(this)">202107-吃完東西要刷牙.mp4</li>
+		<li data-index="14" data-src="https://drive.google.com/uc?export=download&id=1-e1DIeTt4FcCbrugcpdh1Y96UKfc5Ykf" onclick="myMsg(this)">202107-坐車出去玩.mp4</li>
+		<li data-index="15" data-src="https://drive.google.com/uc?export=download&id=1PrXH3rB-WVatDlkXYAinYx7TJ1zn2Ff8" onclick="myMsg(this)">202107-海豚 螃蟹 海龜.mp4</li>
+		<li data-index="16" data-src="https://drive.google.com/uc?export=download&id=135srzPG40Kh1QkEa5dk7ZUdV4t6q8daf" onclick="myMsg(this)">202107-變身IC公車（一）.mp4</li>
+		<li data-index="17" data-src="https://drive.google.com/uc?export=download&id=1qF5LLUN1oI_KHgxkSDvtGIGY6aG8zytv" onclick="myMsg(this)">202107-變身IC公車（三）.mp4</li>
+		<li data-index="18" data-src="https://drive.google.com/uc?export=download&id=1UP3MEmYOVtMbhyZXCzlaff5c8eX6DGJ2" onclick="myMsg(this)">202107-變身IC公車（二）.mp4</li>
+		<li data-index="19" data-src="https://drive.google.com/uc?export=download&id=1YqIVSsRRytMolnnpkeM4fZIY5k9W5vT1" onclick="myMsg(this)">202107-點點點.mp4</li>
+		<li data-index="20" data-src="https://drive.google.com/uc?export=download&id=1ASW3zGz38hV5h2f6W9qrieQRyyAo9rc0" onclick="myMsg(this)">202108-Happy.mp4</li>
+		<li data-index="21" data-src="https://drive.google.com/uc?export=download&id=1hJKipfMrbQ19xnamJ2a0V-j7NGIv7stQ" onclick="myMsg(this)">202108-ㄨˇ~ㄨㄚˋ.mp4</li>
+		<li data-index="22" data-src="https://drive.google.com/uc?export=download&id=1EIOoiLgOHPXYqGwtDLRbNDB67L9pgaX_" onclick="myMsg(this)">202108-依比呀呀.mp4</li>
+		<li data-index="23" data-src="https://drive.google.com/uc?export=download&id=1i3noixePtKHJ7XeQZqMVWKP8vHi3zF-f" onclick="myMsg(this)">202108-去公園玩.mp4</li>
+		<li data-index="24" data-src="https://drive.google.com/uc?export=download&id=1fW-c-ROTyHCYwFpZpmSIk7saa80ltRTg" onclick="myMsg(this)">202108-吃點心.mp4</li>
+		<li data-index="25" data-src="https://drive.google.com/uc?export=download&id=1GB0CgR-dph6HOsFDWeMgjg7cS3qokhnC" onclick="myMsg(this)">202108-坐安全座椅.mp4</li>
+		<li data-index="26" data-src="https://drive.google.com/uc?export=download&id=18ElRNNgth-XHmX-iVi8Oub-sPBi0wVZQ" onclick="myMsg(this)">202108-拍拍手.mp4</li>
+		<li data-index="27" data-src="https://drive.google.com/uc?export=download&id=1or0_1xBlCo-ua4wKKQQmLAxxm57xK2uj" onclick="myMsg(this)">202108-生活語彙認知遊戲卡1.mp4</li>
+		<li data-index="28" data-src="https://drive.google.com/uc?export=download&id=1oUtXE9hy2VFp-Ur_Z6qeCro1xGtV2Kdb" onclick="myMsg(this)">202108-生活語彙認知遊戲卡2.mp4</li>
+		<li data-index="29" data-src="https://drive.google.com/uc?export=download&id=1hga80RiWgLw0yP-gS-vgWmPHF15E4e4o" onclick="myMsg(this)">202109-Eyes.mp4</li>
+		<li data-index="30" data-src="https://drive.google.com/uc?export=download&id=1hXBkUxFoIlLbLV0g43ahbOUM3hyEHIB9" onclick="myMsg(this)">202109-中秋節.mp4</li>
+		<li data-index="31" data-src="https://drive.google.com/uc?export=download&id=1qVOcbzcfHeHICHkoArH7VjKHuXJCW7yr" onclick="myMsg(this)">202109-咻～撲通！.mp4</li>
+		<li data-index="32" data-src="https://drive.google.com/uc?export=download&id=1oLIxvPtSKkEGrAKtyRMKAq7N7-h1a6Uf" onclick="myMsg(this)">202109-嚕啦啦.mp4</li>
+		<li data-index="33" data-src="https://drive.google.com/uc?export=download&id=1TJJEvAab5hmDB_7QJQvKm0jSzXxD4sDb" onclick="myMsg(this)">202109-小魚兒.mp4</li>
+		<li data-index="34" data-src="https://drive.google.com/uc?export=download&id=1aQHfVw5IP93LV8OP-RnrSrVO4MajJTcC" onclick="myMsg(this)">202109-巧虎溜溜玩水組（一）.mp4</li>
+		<li data-index="35" data-src="https://drive.google.com/uc?export=download&id=1zrjCiGs6pPRGDMHBAEL6CvT8tNO--Edd" onclick="myMsg(this)">202109-巧虎溜溜玩水組（二）.mp4</li>
+		<li data-index="36" data-src="https://drive.google.com/uc?export=download&id=1v_Yyx6_9fc_d8b8ShCksUrh4ujRSb73K" onclick="myMsg(this)">202109-我愛洗澡.mp4</li>
+		<li data-index="37" data-src="https://drive.google.com/uc?export=download&id=14w-B1osDhVGiRWMBhfY4mteGxcaDJf8f" onclick="myMsg(this)">202109-我會說有.mp4</li>
+		<li data-index="38" data-src="https://drive.google.com/uc?export=download&id=1IGU0Gidcc8TQx53HdJtX5rXHJRs73pOF" onclick="myMsg(this)">202109-我的身體.mp4</li>
+		<li data-index="39" data-src="https://drive.google.com/uc?export=download&id=1uJCNDhP2SJ_GavLFUyVHtwLJBO7iFjSp" onclick="myMsg(this)">202110-Duck.mp4</li>
+		<li data-index="40" data-src="https://drive.google.com/uc?export=download&id=1MkTR248suKLODqzOE3T050UpdvV8Q2pd" onclick="myMsg(this)">202110-IC節奏律動鼓（一）.mp4</li>
+		<li data-index="41" data-src="https://drive.google.com/uc?export=download&id=1F3O3iLdWHBv6OIwj9hSFJyvxsSWJPCd3" onclick="myMsg(this)">202110-IC節奏律動鼓（二）.mp4</li>
+		<li data-index="42" data-src="https://drive.google.com/uc?export=download&id=1HKSAiJyDpkM4bWo35gT4uXVpQZ7YwOSP" onclick="myMsg(this)">202110-去農場看動物.mp4</li>
+		<li data-index="43" data-src="https://drive.google.com/uc?export=download&id=19d8NZlYEd5w6Fsn5S4IoiF9hIvvX3DPq" onclick="myMsg(this)">202110-咚咚咚202110-一起來打鼓！.mp4</li>
+		<li data-index="44" data-src="https://drive.google.com/uc?export=download&id=1DNE2G4-4zZ3XxrZ5CefJC5qtWbAHlFMQ" onclick="myMsg(this)">202110-小豬拱拱.mp4</li>
+		<li data-index="45" data-src="https://drive.google.com/uc?export=download&id=139gnvCa3WQzYiq5xNTOx-vro4c0tVv2t" onclick="myMsg(this)">202110-戴口罩.mp4</li>
+		<li data-index="46" data-src="https://drive.google.com/uc?export=download&id=1Z9_wmeFy2UtwbMmo4N0eEBkpM4XNd9iy" onclick="myMsg(this)">202110-擦鼻涕.mp4</li>
+		<li data-index="47" data-src="https://drive.google.com/uc?export=download&id=1TX0ud7ZZxhL6LUHMOVAfM3kEjZ4dUcFn" onclick="myMsg(this)">202110-煙火.mp4</li>
+		<li data-index="48" data-src="https://drive.google.com/uc?export=download&id=14BQU0fybVNUWll4yzbJdA12Ze-PFzvKX" onclick="myMsg(this)">202110-蔬菜切切.mp4</li>
+		<li data-index="49" data-src="https://drive.google.com/uc?export=download&id=1LajQL2lUHU4Hxlw-eyCKI1folaptlcHZ" onclick="myMsg(this)">202111-交通工具拼圖書.mp4</li>
+		<li data-index="50" data-src="https://drive.google.com/uc?export=download&id=1JKJRrdxx5TdbGyKYaJlQtPhwXfg6r020" onclick="myMsg(this)">202111-人際：Hello！你好.mp4</li>
+		<li data-index="51" data-src="https://drive.google.com/uc?export=download&id=1KDrN0iYU4CUUssvkRPDVTGoU5svjGVUx" onclick="myMsg(this)">202111-各式各樣的車子.mp4</li>
+		<li data-index="52" data-src="https://drive.google.com/uc?export=download&id=1ADXLuhzDStxGfNpP-TDXxQ02FrJhCJzK" onclick="myMsg(this)">202111-唱跳：Hello！你好.mp4</li>
+		<li data-index="53" data-src="https://drive.google.com/uc?export=download&id=18dHBszUDpgHOgaVeKSgVedlwbEij0tgM" onclick="myMsg(this)">202111-地瓜.mp4</li>
+		<li data-index="54" data-src="https://drive.google.com/uc?export=download&id=1ef53aHns5-IwU4z27cblIMj3toEV8x2U" onclick="myMsg(this)">202111-愛爬樹的小猴子.mp4</li>
+		<li data-index="55" data-src="https://drive.google.com/uc?export=download&id=1aVGbJvlmSQB25VfCq_rAIoluLK4EAh5r" onclick="myMsg(this)">202111-我會收玩具.mp4</li>
+		<li data-index="56" data-src="https://drive.google.com/uc?export=download&id=10oVS00KcMl9CHo4cGSfXfNR1G4-Cy4Y8" onclick="myMsg(this)">202111-火車快飛.mp4</li>
+		<li data-index="57" data-src="https://drive.google.com/uc?export=download&id=1jHC2fdq8Sw7TmpBPrYzb01f4hQCQc1XN" onclick="myMsg(this)">202111-送小汽車回家.mp4</li>
+		<li data-index="58" data-src="https://drive.google.com/uc?export=download&id=1X3wyuyWE_S6wXUjk8ufmNmgJf7euiKTy" onclick="myMsg(this)">202112-Apple.mp4</li>
+		<li data-index="59" data-src="https://drive.google.com/uc?export=download&id=1GXzExiEClGhFaxO0FxQsKZUTVtAwdEyV" onclick="myMsg(this)">202112-IC巧虎睡覺音樂故事機.mp4</li>
+		<li data-index="60" data-src="https://drive.google.com/uc?export=download&id=18urwvbPBLexQZAYaMrnuKN3Kp92Ynxjm" onclick="myMsg(this)">202112-下雨了.mp4</li>
+		<li data-index="61" data-src="https://drive.google.com/uc?export=download&id=1axuoVz1y5IGNdbI6GJoc0_9xJNU0_Ek4" onclick="myMsg(this)">202112-好多水果（一）.mp4</li>
+		<li data-index="62" data-src="https://drive.google.com/uc?export=download&id=1c5EaHc0rpDaYEclEMzJ6QR5ZJCuLlmWu" onclick="myMsg(this)">202112-好多水果（三）.mp4</li>
+		<li data-index="63" data-src="https://drive.google.com/uc?export=download&id=1U40mJmVCssN1u1axbDCoWs-uUVpEszmf" onclick="myMsg(this)">202112-好多水果（二）.mp4</li>
+		<li data-index="64" data-src="https://drive.google.com/uc?export=download&id=183HeRAFVKtDAD7pD2f-CmHOQK645tXe6" onclick="myMsg(this)">202112-找一找，小藍在哪裡？.mp4</li>
+		<li data-index="65" data-src="https://drive.google.com/uc?export=download&id=1AODk8BAeCOOpoPBJ2EjaDSHCoYS2YH76" onclick="myMsg(this)">202112-睡覺時間到.mp4</li>
+		<li data-index="66" data-src="https://drive.google.com/uc?export=download&id=1LQ7ozZTpcRl8PS8T1vwUCYrCNqJWO_Zl" onclick="myMsg(this)">202112-耶誕快樂.mp4</li>
+		<li data-index="67" data-src="https://drive.google.com/uc?export=download&id=1Vww0GI5F6ZmtTcq3AN1OpqoK_9gDm2Fd" onclick="myMsg(this)">202112-耶誕老公公來了.mp4</li>
+		<li data-index="68" data-src="https://drive.google.com/uc?export=download&id=1C_sMawT-ErOcdJmB_fBQ7dwdA3SjCitp" onclick="myMsg(this)">202112-謝謝.mp4</li>
+		<li data-index="69" data-src="https://drive.google.com/uc?export=download&id=1JV1q1dUjeOQeYwc6lc2ypTYsIICbepEf" onclick="myMsg(this)">202201-圍巾.mp4</li>
+		<li data-index="70" data-src="https://drive.google.com/uc?export=download&id=1VqFq3XYY3l5kx8D4tpFL73IVXw0N8h5Q" onclick="myMsg(this)">202201-小星星.mp4</li>
+		<li data-index="71" data-src="https://drive.google.com/uc?export=download&id=1VIR6veZGYZRsQK4O_7nsmc6G_w5ysWHH" onclick="myMsg(this)">202201-我會坐好吃飯.mp4</li>
+		<li data-index="72" data-src="https://drive.google.com/uc?export=download&id=1zOwE0cHGPmW_y84D-6sSqCrCN9fUkCjd" onclick="myMsg(this)">202201-手牽手.mp4</li>
+		<li data-index="73" data-src="https://drive.google.com/uc?export=download&id=1F_nYjBSqcgF5m90p8MQSIczbYLTlZCmi" onclick="myMsg(this)">202201-紅色.mp4</li>
+		<li data-index="74" data-src="https://drive.google.com/uc?export=download&id=1m0RLzgqg0pFfzpHZ4ZGUvrmdipfeBGZL" onclick="myMsg(this)">202201-紅黃藍顏色娃娃（一）.mp4</li>
+		<li data-index="75" data-src="https://drive.google.com/uc?export=download&id=1KGtmEEJFiLeuuOxTwcQ2PHC_mNAsxd7_" onclick="myMsg(this)">202201-紅黃藍顏色娃娃（二）.mp4</li>
+		<li data-index="76" data-src="https://drive.google.com/uc?export=download&id=1e7wvxf-29udTh_rNIyJGz6gXP5fdAPQi" onclick="myMsg(this)">202201-萬能裁縫店.mp4</li>
+		<li data-index="77" data-src="https://drive.google.com/uc?export=download&id=1mWNg_X-eo3Bcd3b7w6SRJ840uw0Sz9sN" onclick="myMsg(this)">202201-藍色.mp4</li>
+		<li data-index="78" data-src="https://drive.google.com/uc?export=download&id=1Q22QZdUPSKbeb-0ntCDXL-Et_Yw0CSfu" onclick="myMsg(this)">202201-要買什麼蔬菜呢？.mp4</li>
+		<li data-index="79" data-src="https://drive.google.com/uc?export=download&id=18Ebm3WWxVZl_MFijiGA9Q89hH56XLaoH" onclick="myMsg(this)">202201-黃色.mp4</li>
+		<li data-index="80" data-src="https://drive.google.com/uc?export=download&id=1hHXx9DG3UiO_RE6_KDrQUMrdHlBbetER" onclick="myMsg(this)">202202-Pineapple.mp4</li>
+		<li data-index="81" data-src="https://drive.google.com/uc?export=download&id=1v-aypY1g8oPd2QN01QOvaarLaAhtjG0I" onclick="myMsg(this)">202202-全部吃光光.mp4</li>
+		<li data-index="82" data-src="https://drive.google.com/uc?export=download&id=1iN8PiDwD97X_KnuM6LejjkN6KPp6kn6a" onclick="myMsg(this)">202202-唱跳：恭喜恭喜.mp4</li>
+		<li data-index="83" data-src="https://drive.google.com/uc?export=download&id=1ULal9kafSsP_N99Yw_vZjCJopHCrbD95" onclick="myMsg(this)">202202-大小.mp4</li>
+		<li data-index="84" data-src="https://drive.google.com/uc?export=download&id=1aefYX-DLZWjpwBkuCew7XxjzOYGLw5mb" onclick="myMsg(this)">202202-大熊與蜜蜂.mp4</li>
+		<li data-index="85" data-src="https://drive.google.com/uc?export=download&id=1SJbpgGorDL8Bf8LylAybxH40eHPdJ89P" onclick="myMsg(this)">202202-彩色小魚愛跳舞.mp4</li>
+		<li data-index="86" data-src="https://drive.google.com/uc?export=download&id=1ioJWhBDe3LDZWIlJLbVychaNryysP0C-" onclick="myMsg(this)">202202-彩色釣魚遊戲組（三）.mp4</li>
+		<li data-index="87" data-src="https://drive.google.com/uc?export=download&id=1qRBoreBJgHoAhYZG5awhQ_gF3j1aIwoL" onclick="myMsg(this)">202202-彩色釣魚遊戲組（二）.mp4</li>
+		<li data-index="88" data-src="https://drive.google.com/uc?export=download&id=13z8Q46jfwdr1b6U0miU5cusyHx5yokA6" onclick="myMsg(this)">202202-彩色釣魚遊戲（一）.mp4</li>
+		<li data-index="89" data-src="https://drive.google.com/uc?export=download&id=1drAFZOo0SGcoLSpPVmNVrhtgsJdGPqF9" onclick="myMsg(this)">202202-我會說對不起.mp4</li>
+		<li data-index="90" data-src="https://drive.google.com/uc?export=download&id=1YJJZHOLnsGgGKSB-Tpq0UPZjq4rTZg-x" onclick="myMsg(this)">202202-說說看：恭喜恭喜.mp4</li>
+		<li data-index="91" data-src="https://drive.google.com/uc?export=download&id=1Az0xwUIW2R5tNspQRmzVsnhgzphgtGCS" onclick="myMsg(this)">202203-Hippo.mp4</li>
+		<li data-index="92" data-src="https://drive.google.com/uc?export=download&id=1e3C-OxsrganarDvs_mCo2j5j9yXWRRYm" onclick="myMsg(this)">202203-一人一半.mp4</li>
+		<li data-index="93" data-src="https://drive.google.com/uc?export=download&id=1sgZxaCFXDlFOKrftsISAAJTTK36LWOlN" onclick="myMsg(this)">202203-一對一對應.mp4</li>
+		<li data-index="94" data-src="https://drive.google.com/uc?export=download&id=1knAwrDR_bP2wioOoIIOKYiuDbaPxQFp1" onclick="myMsg(this)">202203-切切分享遊戲組.mp4</li>
+		<li data-index="95" data-src="https://drive.google.com/uc?export=download&id=1XQz49k0LNENEwJSU80lAM9DNbARFlr-o" onclick="myMsg(this)">202203-動物抱抱.mp4</li>
+		<li data-index="96" data-src="https://drive.google.com/uc?export=download&id=1irfRcAFqBVydXh-7xERcKPuZH5rqESW-" onclick="myMsg(this)">202203-可愛的動物寶寶.mp4</li>
+		<li data-index="97" data-src="https://drive.google.com/uc?export=download&id=1HX2UIlQ5b2YnZzKoGEqZtmJRE7CQoO9m" onclick="myMsg(this)">202203-我是小幫手.mp4</li>
+		<li data-index="98" data-src="https://drive.google.com/uc?export=download&id=1xV_owZdsgwHIqURW-p--6eOe44GYCNzD" onclick="myMsg(this)">202203-扭一扭.mp4</li>
+		<li data-index="99" data-src="https://drive.google.com/uc?export=download&id=1TZbef9C96zX2QVF2cHfSYYDOURNDIt7y" onclick="myMsg(this)">202203-請你吃.mp4</li>
+		<li data-index="100" data-src="https://drive.google.com/uc?export=download&id=1aswu_dz8l_U85ZGueiBosKgTBqN0HBdH" onclick="myMsg(this)">202204-Bubbles.mp4</li>
+		<li data-index="101" data-src="https://drive.google.com/uc?export=download&id=1lvwhHm99XIxsgpTU3cP95u2QPhga6_aR" onclick="myMsg(this)">202204-IC料理小廚師.mp4</li>
+		<li data-index="102" data-src="https://drive.google.com/uc?export=download&id=1ktnRM-1bVddjKatRppn_vqgtZpGtCnY3" onclick="myMsg(this)">202204-一起做料理嘍.mp4</li>
+		<li data-index="103" data-src="https://drive.google.com/uc?export=download&id=1Z9ZlahClMgme1-THYhOPZ3I-8KY2nHLV" onclick="myMsg(this)">202204-喂，你好（一）.mp4</li>
+		<li data-index="104" data-src="https://drive.google.com/uc?export=download&id=1qY4_GK3DAcjmPNakRB9WKw61EnVMxPax" onclick="myMsg(this)">202204-喂，你好（二）.mp4</li>
+		<li data-index="105" data-src="https://drive.google.com/uc?export=download&id=1nnkw5SxtNtDS0ELPTizuXo5rdYsRmKZQ" onclick="myMsg(this)">202204-圓形三角形正方形（一）.mp4</li>
+		<li data-index="106" data-src="https://drive.google.com/uc?export=download&id=1fqgTWkULlA8kO2XrirJB3q_OmyCLAI20" onclick="myMsg(this)">202204-圓形三角形正方形（二）.mp4</li>
+		<li data-index="107" data-src="https://drive.google.com/uc?export=download&id=1gW33_tdCpIpNvmFzzUK0WbJStiXz9eOo" onclick="myMsg(this)">202204-小貓咪.mp4</li>
+		<li data-index="108" data-src="https://drive.google.com/uc?export=download&id=1T7E7hwmkaYPuITftjY-dxwEXoOriAmJo" onclick="myMsg(this)">202204-我是小廚師.mp4</li>
+		<li data-index="109" data-src="https://drive.google.com/uc?export=download&id=16tM4Aq2Fvqbr8oGUo2v8hJvNitYI0KPY" onclick="myMsg(this)">202204-把手洗乾淨.mp4</li>
+		<li data-index="110" data-src="https://drive.google.com/uc?export=download&id=1Tiunu-4sOXMBqaTHCJpGMD9JK0XhxDW8" onclick="myMsg(this)">202204-請幫忙.mp4</li>
+		<li data-index="111" data-src="https://drive.google.com/uc?export=download&id=1JfM8thoXrrjqG1qBPT9dkonWiLEeEHGk" onclick="myMsg(this)">202205-Kiss.mp4</li>
+		<li data-index="112" data-src="https://drive.google.com/uc?export=download&id=11WZrVqMebL5jDLw6xbnU67YLeVYTf8hd" onclick="myMsg(this)">202205-動物親子拼圖組（一）.mp4</li>
+		<li data-index="113" data-src="https://drive.google.com/uc?export=download&id=1fseeGdRFn94qR8uIVODtB27txiJXVYYG" onclick="myMsg(this)">202205-動物親子拼圖組（三）.mp4</li>
+		<li data-index="114" data-src="https://drive.google.com/uc?export=download&id=1X8oNgSnXUCQcV9huGR37pwzZDy4dHl4i" onclick="myMsg(this)">202205-動物親子拼圖組（二）.mp4</li>
+		<li data-index="115" data-src="https://drive.google.com/uc?export=download&id=1m2tnwk9_vYQUbu8-GIcgho_VgnTJpP--" onclick="myMsg(this)">202205-媽媽我愛你（一）.mp4</li>
+		<li data-index="116" data-src="https://drive.google.com/uc?export=download&id=1xnOHC62UoFLO8A0HchMoVw675ZbZNgBj" onclick="myMsg(this)">202205-媽媽我愛你（二）.mp4</li>
+		<li data-index="117" data-src="https://drive.google.com/uc?export=download&id=1jyAecro9wR9g42Ay62sAi1Pi9Lfk1jAy" onclick="myMsg(this)">202205-我會擦嘴巴.mp4</li>
+		<li data-index="118" data-src="https://drive.google.com/uc?export=download&id=1ZTVF-tQtxSNH-ZERaiEzx6Bgz-dqAKcB" onclick="myMsg(this)">202205-找出指定物.mp4</li>
+		<li data-index="119" data-src="https://drive.google.com/uc?export=download&id=1MNr1IugCF6_fxz4f6Z8DvV8zs3jllrOF" onclick="myMsg(this)">202205-排隊輪流玩.mp4</li>
+		<li data-index="120" data-src="https://drive.google.com/uc?export=download&id=1fqb_4zNjJn95bXFQcvfKBCRJ4NLD3eeD" onclick="myMsg(this)">202205-汽車ㄅㄨㄅㄨㄅㄨ.mp4</li>
+		<li data-index="121" data-src="https://drive.google.com/uc?export=download&id=1tur2iPjRzZZyA_oooqPJACdUIpgjDwY1" onclick="myMsg(this)">202205-要坐火車去哪裡？.mp4</li>
+		<li data-index="122" data-src="https://drive.google.com/uc?export=download&id=1h7xLKHqU2mYKlCtJBmgqKu-pWyBl_hPg" onclick="myMsg(this)">202206-Bananas.mp4</li>
+		<li data-index="123" data-src="https://drive.google.com/uc?export=download&id=148etuxc2Frtfipb1uHjg4sCuqYDKhkLi" onclick="myMsg(this)">202206-一樣的.mp4</li>
+		<li data-index="124" data-src="https://drive.google.com/uc?export=download&id=1eZeE9Voyd9phgFkgS0cS08nuqvBuPsCE" onclick="myMsg(this)">202206-好吃的食物.mp4</li>
+		<li data-index="125" data-src="https://drive.google.com/uc?export=download&id=1cqftedlN7oZtHQEV8KuHGX4tqsPqWEb6" onclick="myMsg(this)">202206-巧虎IC如廁學習機.mp4</li>
+		<li data-index="126" data-src="https://drive.google.com/uc?export=download&id=1pvTqAAxA_8S-DW1jhWfrZhcXm22XHWH8" onclick="myMsg(this)">202206-蝸牛歌.mp4</li>
+		<li data-index="127" data-src="https://drive.google.com/uc?export=download&id=1V4w85Kz4lAX0oKrFnZedWwocz9eVT9JD" onclick="myMsg(this)">202206-請借我玩.mp4</li>
+		<li data-index="128" data-src="https://drive.google.com/uc?export=download&id=1Xj18E5Gl_nzwcIN45mr8aZqUK8ELTE1b" onclick="myMsg(this)">202206-飛機.mp4</li>
+		<li data-index="129" data-src="https://drive.google.com/uc?export=download&id=1tltSn6GqlOA4eTqV-yAYYRJrUXcOCNdS" onclick="myMsg(this)">202206-香噴噴點心屋.mp4</li>
+		<li data-index="130" data-src="https://drive.google.com/uc?export=download&id=1pdKg4R-Pp2OR88MhVTfOmI0AOXKi8vO1" onclick="myMsg(this)">202206-馬桶寶寶你好.mp4</li>
+		<li data-index="131" data-src="https://drive.google.com/uc?export=download&id=1a3isanhjEX_52J_o-9EwsVczWpzy0jU3" onclick="myMsg(this)">202207-Run.mp4</li>
+		<li data-index="132" data-src="https://drive.google.com/uc?export=download&id=1WqoxugYRXLKhGvj3L2oJye9lebZBNZm_" onclick="myMsg(this)">202207-公園裡的小動物.mp4</li>
+		<li data-index="133" data-src="https://drive.google.com/uc?export=download&id=1wX4HZs9ihVTXdN9nDRQy8WocD4X8zrY4" onclick="myMsg(this)">202207-出門戴帽子.mp4</li>
+		<li data-index="134" data-src="https://drive.google.com/uc?export=download&id=1VmxxRcUhjEgcZYAIEe9n5doseoAM8oiE" onclick="myMsg(this)">202207-創意顏色形狀積木組.mp4</li>
+		<li data-index="135" data-src="https://drive.google.com/uc?export=download&id=1MOFvS4suXaAWDuzfwYuS7ve2YtRIcXPP" onclick="myMsg(this)">202207-呼呼不痛.mp4</li>
+		<li data-index="136" data-src="https://drive.google.com/uc?export=download&id=1L-MCQrrr6g1LUxsvC_GeJ0JLwKVK9xIH" onclick="myMsg(this)">202207-和顏色娃娃一起玩積木.mp4</li>
+		<li data-index="137" data-src="https://drive.google.com/uc?export=download&id=1GhfXphOeJRfX2rgLug5-r-VitjlijUWr" onclick="myMsg(this)">202207-坐馬桶上廁所.mp4</li>
+		<li data-index="138" data-src="https://drive.google.com/uc?export=download&id=1auJhX-lNY3dNBIBXKxjTtv4gOyzCIQ-d" onclick="myMsg(this)">202207-小松鼠.mp4</li>
+		<li data-index="139" data-src="https://drive.google.com/uc?export=download&id=1uPlvwURqwmj_Em2f4q-udGO5W8x6tYv4" onclick="myMsg(this)">202207-小青蛙.mp4</li>
+		<li data-index="140" data-src="https://drive.google.com/uc?export=download&id=12ej0XwBVcyxd_ba41zIGpktVQ3o6B6kK" onclick="myMsg(this)">202207-白色.mp4</li>
+		<li data-index="141" data-src="https://drive.google.com/uc?export=download&id=1vd54SCzuiKA57t8qMC962Eb27Y1Td3MM" onclick="myMsg(this)">202207-綠色.mp4</li>
+		<li data-index="142" data-src="https://drive.google.com/uc?export=download&id=1IBIFr4PZMzYfIaNht4PGsKzWVBudaJKs" onclick="myMsg(this)">202207-黑色.mp4</li>
+		<li data-index="143" data-src="https://drive.google.com/uc?export=download&id=1WtFoM9iN0ILwWajB0JW--3-mh36sxGXW" onclick="myMsg(this)">202208-Jump.mp4</li>
+		<li data-index="144" data-src="https://drive.google.com/uc?export=download&id=1usXDOqqOLOCyUox01vqkbvG29LzWns4q" onclick="myMsg(this)">202208-一起動動腦.mp4</li>
+		<li data-index="145" data-src="https://drive.google.com/uc?export=download&id=1XlljnIa6Auop_A04Mxp8aBZdxp6ZcK5l" onclick="myMsg(this)">202208-一起跳舞.mp4</li>
+		<li data-index="146" data-src="https://drive.google.com/uc?export=download&id=1IURpy9qYszcBXmrkF2iW4oqqZSeCgTv6" onclick="myMsg(this)">202208-唱唱跳跳：爸爸我愛你.mp4</li>
+		<li data-index="147" data-src="https://drive.google.com/uc?export=download&id=1xJxywUejRYyRWbWxg5sxI2ys4VxguqMs" onclick="myMsg(this)">202208-坐在馬桶等一下.mp4</li>
+		<li data-index="148" data-src="https://drive.google.com/uc?export=download&id=1olFlFYPNTDzgKnJwU6z_H5F-JBd9L8Pg" onclick="myMsg(this)">202208-我會穿鞋子.mp4</li>
+		<li data-index="149" data-src="https://drive.google.com/uc?export=download&id=1MyMYJgg43SKpXPW-irO4hL9QLhJINfAy" onclick="myMsg(this)">202208-生病快快好起來.mp4</li>
+		<li data-index="150" data-src="https://drive.google.com/uc?export=download&id=1luokZonTJHZEBHOWkEvs-fcGXRxujrkk" onclick="myMsg(this)">202208-說說看：爸爸我愛你.mp4</li>
+		<li data-index="151" data-src="https://drive.google.com/uc?export=download&id=1zOZ_ek6E31f2xZ3I-1Q64kpS0WOFoNG_" onclick="myMsg(this)">202208-這是誰的鞋子.mp4</li>
+		<li data-index="152" data-src="https://drive.google.com/uc?export=download&id=1rFPHu4hykCqilhfxhRKjx_Ub4pvv6oSC" onclick="myMsg(this)">202208-顏色娃娃扮演組.mp4</li>
+		<li data-index="153" data-src="https://drive.google.com/uc?export=download&id=1I5KUd_yTOGT1u6KPUV4nfBXYfOHU9_Rh" onclick="myMsg(this)">202209-一起去看動物（一）.mp4</li>
+		<li data-index="154" data-src="https://drive.google.com/uc?export=download&id=1MUyVcOLvrfy0SK6vYMM08qNgmMWEakbg" onclick="myMsg(this)">202209-一起去看動物（二）.mp4</li>
+		<li data-index="155" data-src="https://drive.google.com/uc?export=download&id=18v62I1QeK9mwWlhw2YEXoI-n6UccYXa-" onclick="myMsg(this)">202209-動物園.mp4</li>
+		<li data-index="156" data-src="https://drive.google.com/uc?export=download&id=1KwUaD5CMqk-P4pf2Cpt2uyQHgPllrnJU" onclick="myMsg(this)">202209-我的新朋友琪琪.mp4</li>
+		<li data-index="157" data-src="https://drive.google.com/uc?export=download&id=1RMEhCMJEO6xo30Xp2JRosmBrcUT2Ts_u" onclick="myMsg(this)">202209-毛蟲報報.mp4</li>
+		<li data-index="158" data-src="https://drive.google.com/uc?export=download&id=1iZnGAuVWmt123MWDyOGIbojquQ3220_J" onclick="myMsg(this)">202209-牙刷來了，趕走蛀牙菌！.mp4</li>
+		<li data-index="159" data-src="https://drive.google.com/uc?export=download&id=1WKH5biI_0JLMMUeU0PaATjjM-JelPxvi" onclick="myMsg(this)">202209-睡覺前要刷牙.mp4</li>
+		<li data-index="160" data-src="https://drive.google.com/uc?export=download&id=1Cz-Dq_aS2PDAPIMSzuf7zcF2L2XFheBF" onclick="myMsg(this)">202209-腦力開發汽車組.mp4</li>
+		<li data-index="161" data-src="https://drive.google.com/uc?export=download&id=1GvKhSNNoXCgAD7soSLEW8EFd7-iCZK2C" onclick="myMsg(this)">202209-長短.mp4</li>
+		<li data-index="162" data-src="https://drive.google.com/uc?export=download&id=1hjSTS95JaeBUfk1KTfWzfe2QAMchul0Z" onclick="myMsg(this)">202209-點讀巧比.mp4</li>
+		<li data-index="163" data-src="https://drive.google.com/uc?export=download&id=1hhZlwt8nwytIjdXBD5ZDjcrjm5bkNSPV" onclick="myMsg(this)">202210-唱歌快樂多.mp4</li>
+		<li data-index="164" data-src="https://drive.google.com/uc?export=download&id=1g7oU6Cs3lH9BXn2VeEDZNnsdFa_0nhUP" onclick="myMsg(this)">202210-大野狼和三隻小豬.mp4</li>
+		<li data-index="165" data-src="https://drive.google.com/uc?export=download&id=12XRCxzk_bzOoppdfQIT7wwt8XkHvJJeV" onclick="myMsg(this)">202210-小花不哭.mp4</li>
+		<li data-index="166" data-src="https://drive.google.com/uc?export=download&id=1Jsl-vK5oxBk_Kr6L1J1Na_dS9i0NZEYH" onclick="myMsg(this)">202210-小花妹妹照顧組.mp4</li>
+		<li data-index="167" data-src="https://drive.google.com/uc?export=download&id=1nxnWJMDSZhMbpmVEOC_CIU7T4I1TxXgi" onclick="myMsg(this)">202210-毛蟲報報.mp4</li>
+		<li data-index="168" data-src="https://drive.google.com/uc?export=download&id=1gNIpIE-eOWnceVVjTxbc9k-kgHglBC_h" onclick="myMsg(this)">202210-購物遊戲組.mp4</li>
+		<li data-index="169" data-src="https://drive.google.com/uc?export=download&id=1BZSLZ6fKxUs5_YhMzOfn5IqsQVFpwshW" onclick="myMsg(this)">202210-起床要上廁所唷！.mp4</li>
+		<li data-index="170" data-src="https://drive.google.com/uc?export=download&id=1aVZpOGKBCva6TIWxnuh7Mq3af6T1sGpu" onclick="myMsg(this)">202210-跳呀番茄美乃滋.mp4</li>
+		<li data-index="171" data-src="https://drive.google.com/uc?export=download&id=17WXljyHWeSjw9hfU6b23L8uuXTNtwRtf" onclick="myMsg(this)">202211-小老鼠.mp4</li>
+		<li data-index="172" data-src="https://drive.google.com/uc?export=download&id=1ajRg1dbkvtyUhNGtP2A1ekdhNuZseTER" onclick="myMsg(this)">202211-我是小醫生遊戲組.mp4</li>
+		<li data-index="173" data-src="https://drive.google.com/uc?export=download&id=1Qd2_LM5iPRgOC2Z3Uu_ZCLao0pshLlCi" onclick="myMsg(this)">202211-我會乖乖看醫生.mp4</li>
+		<li data-index="174" data-src="https://drive.google.com/uc?export=download&id=1HIqYUJNKC56qasKiks9GM3EnoXfheUn7" onclick="myMsg(this)">202211-我會擦鼻涕遮口鼻.mp4</li>
+		<li data-index="175" data-src="https://drive.google.com/uc?export=download&id=1fZJ3-jnis2QWdN1NfEo4v832oaeWGNLm" onclick="myMsg(this)">202211-森林裡的大象診所.mp4</li>
+		<li data-index="176" data-src="https://drive.google.com/uc?export=download&id=1aQesXelktARV067Ug2ewDbYX30uXJZzI" onclick="myMsg(this)">202211-毛蟲報報.mp4</li>
+		<li data-index="177" data-src="https://drive.google.com/uc?export=download&id=1_Gc4G963puSf-TtdjT9ITP8WVRMaOLMQ" onclick="myMsg(this)">202211-頭兒肩膀膝腳趾.mp4</li>
+		<li data-index="178" data-src="https://drive.google.com/uc?export=download&id=1R_mXP_1fy37p3pHWweripQG8gI98AWQo" onclick="myMsg(this)">202211-高低.mp4</li>
+		<li data-index="179" data-src="https://drive.google.com/uc?export=download&id=1QP6NN_y8QKzjNJ6Bxp0zBHtI3qzC1vjT" onclick="myMsg(this)">202212-分類.mp4</li>
+		<li data-index="180" data-src="https://drive.google.com/uc?export=download&id=1dL_sZ423jiuVCD127O6IRr0oIOKqAa2Q" onclick="myMsg(this)">202212-垃圾丟進垃圾桶.mp4</li>
+		<li data-index="181" data-src="https://drive.google.com/uc?export=download&id=1wRFUP1YhW5EurvI9swuA4YC6oru_IyYl" onclick="myMsg(this)">202212-好吃的蔬菜水果.mp4</li>
+		<li data-index="182" data-src="https://drive.google.com/uc?export=download&id=1bstCxIOnCr_VrEuNywOPZ8hGSsoyYLoQ" onclick="myMsg(this)">202212-毛蟲報報.mp4</li>
+		<li data-index="183" data-src="https://drive.google.com/uc?export=download&id=1sxOjoox0QjyJzR8YJX3zLs1Ks-WnXyd3" onclick="myMsg(this)">202212-用眼睛看不摸不摸.mp4</li>
+		<li data-index="184" data-src="https://drive.google.com/uc?export=download&id=1gtI_bhQ8xL4Tjf8837YVojUWA9dMWRWX" onclick="myMsg(this)">202212-笑咪咪超市.mp4</li>
+		<li data-index="185" data-src="https://drive.google.com/uc?export=download&id=1creKNHv6koH3i9Vtj2G6nO_dCMtdpUn5" onclick="myMsg(this)">202212-耶誕快樂.mp4</li>
+		<li data-index="186" data-src="https://drive.google.com/uc?export=download&id=1_ycVjtELC_YmdfCLgA6tP9CVdJ6z_Q1-" onclick="myMsg(this)">202212-購物遊戲組.mp4</li>
+		<li data-index="187" data-src="https://drive.google.com/uc?export=download&id=1T63Vje_cY91MU46gXnCiIcGQNlmfF1uT" onclick="myMsg(this)">202212-開店遊戲.mp4</li>
+		<li data-index="188" data-src="https://drive.google.com/uc?export=download&id=10dVewa-Qm7-uwzp_Rd9YVYO73bgfWEVv" onclick="myMsg(this)">202301-再玩一次就回家.mp4</li>
+		<li data-index="189" data-src="https://drive.google.com/uc?export=download&id=1xykZJZL54-IPcozt_gsJkbNcT1ANwomg" onclick="myMsg(this)">202301-唱數1-10.mp4</li>
+		<li data-index="190" data-src="https://drive.google.com/uc?export=download&id=1JQ0Ye0ZMOK708ja58-EyL_ZxlOY3GRVi" onclick="myMsg(this)">202301-大吉大利過新年.mp4</li>
+		<li data-index="191" data-src="https://drive.google.com/uc?export=download&id=1zp4pS5_KEzlNyXpcaTn1Y7o7EQt0f7rY" onclick="myMsg(this)">202301-巧虎新年立體積木.mp4</li>
+		<li data-index="192" data-src="https://drive.google.com/uc?export=download&id=1fiY3qCW5srNzZkeqPPj0OT1VXtqzzaAY" onclick="myMsg(this)">202301-恭喜新年好.mp4</li>
+		<li data-index="193" data-src="https://drive.google.com/uc?export=download&id=17Hi0ItRRRhlDAoa4gYKHMU0otm4uQbrb" onclick="myMsg(this)">202301-我不碰燙燙的東西.mp4</li>
+		<li data-index="194" data-src="https://drive.google.com/uc?export=download&id=1CgCUql6nJdk-VGnWQ37fpraKPZXbxBT6" onclick="myMsg(this)">202301-毛蟲報報.mp4</li>
+		<li data-index="195" data-src="https://drive.google.com/uc?export=download&id=1fyoOvn5P9z2hEUw1ekY4A6iFzihE-Dtf" onclick="myMsg(this)">202301-蘋果平平安安.mp4</li>
+		<li data-index="196" data-src="https://drive.google.com/uc?export=download&id=1t9xpnLCAGisJDoMdHxcIEycAT_6KRY4y" onclick="myMsg(this)">202302-不哭不哭好好說.mp4</li>
+		<li data-index="197" data-src="https://drive.google.com/uc?export=download&id=1GpbtcAveA7SHH6HRdZWbf9RVBPSaeKG4" onclick="myMsg(this)">202302-我會收玩具.mp4</li>
+		<li data-index="198" data-src="https://drive.google.com/uc?export=download&id=1fBsE0LpjLPFJEUdwCBBd_4K2I4N02Fit" onclick="myMsg(this)">202302-我有一個小祕密.mp4</li>
+		<li data-index="199" data-src="https://drive.google.com/uc?export=download&id=1iaG43JhQ_1CkfcFNGRjq6uxu3s0l_ngS" onclick="myMsg(this)">202302-數字歌.mp4</li>
+		<li data-index="200" data-src="https://drive.google.com/uc?export=download&id=1qPJlif_wNRIfsJfNwQeQTYt1rCwBIu4v" onclick="myMsg(this)">202302-毛蟲報報.mp4</li>
+		<li data-index="201" data-src="https://drive.google.com/uc?export=download&id=1bLoMtJiLUT-HwCcgQ4ppKIHhc2d2e-gA" onclick="myMsg(this)">202302-玩具派對.mp4</li>
+		<li data-index="202" data-src="https://drive.google.com/uc?export=download&id=1wSds4XiYscI4bsBKrB1tQi-qSxX00fH5" onclick="myMsg(this)">202302-貓頭鷹餐廳.mp4</li>
+		<li data-index="203" data-src="https://drive.google.com/uc?export=download&id=19ns5M0Mgu7mGuc5y8TlwHjGhdOKQu7Jx" onclick="myMsg(this)">202302-踩到玩具會受傷.mp4</li>
+		<li data-index="204" data-src="https://drive.google.com/uc?export=download&id=1WsZy2Ow2o7F7dDaVxK914t0TGe2zzDDn" onclick="myMsg(this)">202302-點心數字配對遊戲組.mp4</li>
+		<li data-index="205" data-src="https://drive.google.com/uc?export=download&id=1BHb-9oVVv6sw4Die__Xpg9p6xvHXVS4n" onclick="myMsg(this)">202303-好好洗手遠離病菌.mp4</li>
+		<li data-index="206" data-src="https://drive.google.com/uc?export=download&id=14GGGAsICxMHYoeBzNs3KVJFgBabv_LFV" onclick="myMsg(this)">202303-我會點數.mp4</li>
+		<li data-index="207" data-src="https://drive.google.com/uc?export=download&id=1lgZyuPb5ivsls1gUZqrzNOzEzEH54VbS" onclick="myMsg(this)">202303-歡迎光臨請點餐.mp4</li>
+		<li data-index="208" data-src="https://drive.google.com/uc?export=download&id=1fging8fETXCPOyPX_d2qfL96WUDi3eVO" onclick="myMsg(this)">202303-毛蟲報報.mp4</li>
+		<li data-index="209" data-src="https://drive.google.com/uc?export=download&id=1CywT7PycFLbMVG2CBF__qbR2GN88-uv7" onclick="myMsg(this)">202303-洗手歌.mp4</li>
+		<li data-index="210" data-src="https://drive.google.com/uc?export=download&id=1gqrZ-MyTtt5DhaVZvIALeD6mKyyAifNK" onclick="myMsg(this)">202303-病菌找新家.mp4</li>
+		<li data-index="211" data-src="https://drive.google.com/uc?export=download&id=1H0w6d5nmU5yBD5zSBhMBg9lYtl5vRVoC" onclick="myMsg(this)">202303-餐廳裡有禮貌.mp4</li>
+		<li data-index="212" data-src="https://drive.google.com/uc?export=download&id=1qi3hyIttRn5hjiAw4zozlI3wD2kJAo6H" onclick="myMsg(this)">202303-餐廳遊戲組（一）.mp4</li>
+		<li data-index="213" data-src="https://drive.google.com/uc?export=download&id=1w__0EjXrsZilcihOYthctfytquYXv2_S" onclick="myMsg(this)">202303-餐廳遊戲組（二）.mp4</li>
+		<li data-index="214" data-src="https://drive.google.com/uc?export=download&id=1D4vRDvSqHD6Q2rBaaZLZyuO9ap9B8DNu" onclick="myMsg(this)">202304-一口一口全部吃光光.mp4</li>
+		<li data-index="215" data-src="https://drive.google.com/uc?export=download&id=1TKPbNrOdGn8EkaTAsSxuMjEfdHiw1hCS" onclick="myMsg(this)">202304-一角兩角三角形.mp4</li>
+		<li data-index="216" data-src="https://drive.google.com/uc?export=download&id=1YWZwZd_Y2G8DjkYG8DfVEQjNEPKqjgin" onclick="myMsg(this)">202304-快快來了！.mp4</li>
+		<li data-index="217" data-src="https://drive.google.com/uc?export=download&id=1cDM8-cBJikCiROCRB_F5cpk_FgZgDfmT" onclick="myMsg(this)">202304-愛心形202304-星形.mp4</li>
+		<li data-index="218" data-src="https://drive.google.com/uc?export=download&id=1_hVS5ZuhOIDAKJYrr38_1UxwLO7tYEZe" onclick="myMsg(this)">202304-我不挑食.mp4</li>
+		<li data-index="219" data-src="https://drive.google.com/uc?export=download&id=1WCfCu7ihO-dEmoCfUwfGXDP7QWN1hEXD" onclick="myMsg(this)">202304-有趣的車子.mp4</li>
+		<li data-index="220" data-src="https://drive.google.com/uc?export=download&id=1hLZE9uRlFZfy6MrVFJwJSyguibyH3uCG" onclick="myMsg(this)">202304-毛蟲報報.mp4</li>
+		<li data-index="221" data-src="https://drive.google.com/uc?export=download&id=15gPspSkRlZlkBfaNX7s_SFXpNne8gqdv" onclick="myMsg(this)">202304-變變變創意工程車.mp4</li>
+		<li data-index="222" data-src="https://drive.google.com/uc?export=download&id=1U5Zqiomr_FYyUpLFQbokYXbm9-HRqUTp" onclick="myMsg(this)">202304-車廂裡的禮貌.mp4</li>
+		<li data-index="223" data-src="https://drive.google.com/uc?export=download&id=1I33_c7DGjSPAgM5sAVNrHFSkwlGOFo0V" onclick="myMsg(this)">202304-過馬路的安全.mp4</li>
+		<li data-index="224" data-src="https://drive.google.com/uc?export=download&id=1Q_njLnsnEuJTr8Odv1M9psyRRr_8YLkq" onclick="myMsg(this)">202305-做錯事情會道歉.mp4</li>
+		<li data-index="225" data-src="https://drive.google.com/uc?export=download&id=1emkeoqJKLzlw5ri8LCwHVvuZYphyeob8" onclick="myMsg(this)">202305-多喝水不喝飲料.mp4</li>
+		<li data-index="226" data-src="https://drive.google.com/uc?export=download&id=1nWbXuEsdZL3mjifDWYYO4tWj8-jVrH8j" onclick="myMsg(this)">202305-媽媽我愛你.mp4</li>
+		<li data-index="227" data-src="https://drive.google.com/uc?export=download&id=10Q039FikKfxBsgMTZ2UeLseoFi-hUL-z" onclick="myMsg(this)">202305-最厲害的媽媽.mp4</li>
+		<li data-index="228" data-src="https://drive.google.com/uc?export=download&id=1Q5ZtIMMfNwRxA8ws92cLH-IzcCpXWJvl" onclick="myMsg(this)">202305-毛蟲報報.mp4</li>
+		<li data-index="229" data-src="https://drive.google.com/uc?export=download&id=11TT0cc1ra6y-TMB1WN9nKowQ9MvlJMD8" onclick="myMsg(this)">202305-水果冰淇淋.mp4</li>
+		<li data-index="230" data-src="https://drive.google.com/uc?export=download&id=1I74uUi85RjaTA19qu1nT9ZzkmotoaGrv" onclick="myMsg(this)">202305-綠紫橘粉紅咖啡.mp4</li>
+		<li data-index="231" data-src="https://drive.google.com/uc?export=download&id=1GuaTsJbaZ7gUfegQFBkHn6aNeNWq2RXF" onclick="myMsg(this)">202305-認知顏色冰淇淋組.mp4</li>
+		<li data-index="232" data-src="https://drive.google.com/uc?export=download&id=15DJxde7azr8ZUeBudDOPK28x-eNKRdv_" onclick="myMsg(this)">202305-走失了在原地等.mp4</li>
+		<li data-index="233" data-src="https://drive.google.com/uc?export=download&id=1YJeddcSAZRAf7muWF_joB8FlqsBRZL2O" onclick="myMsg(this)">202305-這個時候怎麼辦.mp4</li>
+		<li data-index="234" data-src="https://drive.google.com/uc?export=download&id=1alWEJ1kJHJNQBM-R_Nw8WRQ1wDWpwRkj" onclick="myMsg(this)">202306-HAPPY音樂會.mp4</li>
+		<li data-index="235" data-src="https://drive.google.com/uc?export=download&id=1fkIZ8Xgw37sEjMzqpHrtdNJWzx6A44Y3" onclick="myMsg(this)">202306-五月五過端午.mp4</li>
+		<li data-index="236" data-src="https://drive.google.com/uc?export=download&id=17kGi_KmN6Ld_o3XCotNbZOYuXvui9A2w" onclick="myMsg(this)">202306-好大好大的粽子.mp4</li>
+		<li data-index="237" data-src="https://drive.google.com/uc?export=download&id=12rWO53SpoAV97qDyEu4NSTiqdmLEDgU7" onclick="myMsg(this)">202306-幼兒園扮演組.mp4</li>
+		<li data-index="238" data-src="https://drive.google.com/uc?export=download&id=1uNBTxSlzoMgU9xfhB0pFxaZRj8lTDala" onclick="myMsg(this)">202306-幼兒園的一天.mp4</li>
+		<li data-index="239" data-src="https://drive.google.com/uc?export=download&id=1inwwCDKoBCrVqyGcVTfOTL04GzJjVbjF" onclick="myMsg(this)">202306-快和慢.mp4</li>
+		<li data-index="240" data-src="https://drive.google.com/uc?export=download&id=1x4QdgA3o4je-iCC8Dc2wt4hTi0dbku9Q" onclick="myMsg(this)">202306-我的好朋友.mp4</li>
+		<li data-index="241" data-src="https://drive.google.com/uc?export=download&id=1yegwH_MiKBKtx9CG3731g5jLMbYTzG2W" onclick="myMsg(this)">202306-排隊輪流一起玩.mp4</li>
+		<li data-index="242" data-src="https://drive.google.com/uc?export=download&id=1k5LkgP-hM1hAEEowxCD-oSdbySPbXhVd" onclick="myMsg(this)">202306-毛蟲報報.mp4</li>
+		<li data-index="243" data-src="https://drive.google.com/uc?export=download&id=1vnkyP1YufNPGei9FmQx_ohjdK9lxXbnG" onclick="myMsg(this)">202306-溜滑梯的安全.mp4</li>
+		<li data-index="244" data-src="https://drive.google.com/uc?export=download&id=1s14xG7PmhW4EYYsEY-ml0HTqNt3tsllh" onclick="myMsg(this)">202306-自己穿衣服穿褲子.mp4</li>
+		<li data-index="245" data-src="https://drive.google.com/uc?export=download&id=1ctWxdgx1YPUOVIom1qzBH7wetwPmUl_4" onclick="myMsg(this)">202307-不拿尖尖的東西.mp4</li>
+		<li data-index="246" data-src="https://drive.google.com/uc?export=download&id=1H1lxBmGEyREg7y3kE3f9Enumkghz8386" onclick="myMsg(this)">202307-專心聽老師說話.mp4</li>
+		<li data-index="247" data-src="https://drive.google.com/uc?export=download&id=1fuU4Cq4TG3iu-b2HvTHMYgdQh-gpIRgE" onclick="myMsg(this)">202307-我不憋尿.mp4</li>
+		<li data-index="248" data-src="https://drive.google.com/uc?export=download&id=1rZgi-ZtsyDbWMTF7KGhz5GKyQB1tuRhe" onclick="myMsg(this)">202307-我愛夏天.mp4</li>
+		<li data-index="249" data-src="https://drive.google.com/uc?export=download&id=1gTSSoI4LDhNmcleogqhDkF36Prj0t_VS" onclick="myMsg(this)">202307-我是桃樂比.mp4</li>
+		<li data-index="250" data-src="https://drive.google.com/uc?export=download&id=1eBaZTMzAykaRUccOr5AimA2xZsCV9nR4" onclick="myMsg(this)">202307-毛蟲報報.mp4</li>
+		<li data-index="251" data-src="https://drive.google.com/uc?export=download&id=14b0z72P3UoVoo8uwE7oiXs_zf1eLEnnj" onclick="myMsg(this)">202307-海裡動物大集合.mp4</li>
+		<li data-index="252" data-src="https://drive.google.com/uc?export=download&id=1QFbCipO6D_ixyi2Npmvec7_V6bIM5xDO" onclick="myMsg(this)">202307-海裡動物拼圖遊戲組.mp4</li>
+		<li data-index="253" data-src="https://drive.google.com/uc?export=download&id=1o3_Ckst8tzbce2_J-_eJdk_oe_Bqclcd" onclick="myMsg(this)">202307-海裡動物捉迷藏.mp4</li>
+		<li data-index="254" data-src="https://drive.google.com/uc?export=download&id=1RtN9KqqikwTT7dapBfhfCEBj3J7DGnFq" onclick="myMsg(this)">202307-蓋高樓.mp4</li>
+
     </ul>
     
     <video id="videoPlayer" controls>
@@ -21,6 +278,8 @@
         var playlist = document.getElementById('playlist');
         var videoPlayer = document.getElementById('videoPlayer');
         var videoSource = document.getElementById('videoSource');
+		
+		
         
         var videos = playlist.getElementsByTagName('li');
         var currentVideoIndex = 0;
@@ -43,6 +302,17 @@
                 alert('播放清單已結束。');
             }
         });
+		
+		
+		function myMsg(myObj) {
+			videoSource.src =myObj.getAttribute('data-src');
+			currentVideoIndex=myObj.getAttribute('data-index');
+			console.log(currentVideoIndex)
+			videoPlayer.load();
+			videoPlayer.play();
+        
+		}
+		
     </script>
 </body>
 </html>
