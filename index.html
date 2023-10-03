@@ -9,8 +9,12 @@
 </style>
 <body>
     <h1>影片撥放清單</h1>
+	
+	<select id="mySelect">
+
+	</select>
     
-    <ul id="playlist">
+    <ul id="playlist" style="display:none">
 		<li data-index="0" data-src="https://drive.google.com/uc?export=download&id=1bu5QKTNG-HyB2vF83zvOMGOpkW_pnEtd" onclick="myMsg(this)">202106-IC語彙車（一）.mp4</li>
 		<li data-index="1" data-src="https://drive.google.com/uc?export=download&id=1pVcIKgqGgDlGTPV82ik6J-3dVub6yBHE" onclick="myMsg(this)">202106-IC語彙車（二）.mp4</li>
 		<li data-index="2" data-src="https://drive.google.com/uc?export=download&id=1NmdgrYby_ckBGVZnmaXjNOodjV3z5-8w" onclick="myMsg(this)">202106-Mommy Daddy.mp4</li>
@@ -275,19 +279,44 @@
     </video>
     
     <script>
+	
         var playlist = document.getElementById('playlist');
         var videoPlayer = document.getElementById('videoPlayer');
         var videoSource = document.getElementById('videoSource');
+		
+		var select = document.getElementById("mySelect");
 		
 		
         
         var videos = playlist.getElementsByTagName('li');
         var currentVideoIndex = 0;
+		
+		
         
         // 初始化，播放第一個影片
         videoSource.src = videos[currentVideoIndex].getAttribute('data-src');
         videoPlayer.load();
         videoPlayer.play();
+		
+		  
+		for(var i=0;i<videos.length;i++){
+			// 創建一個新的<option>元素
+			var option = document.createElement("option");
+			// 設置新選項的值和顯示文本
+			option.value = videos[i].getAttribute('data-index');
+			option.text = videos[i].textContent;
+			select.appendChild(option);
+		}
+		
+		select.addEventListener("change", function() {
+			currentVideoIndex = select.value;
+			
+			console.log("選擇的值為: " + currentVideoIndex);
+			 videoSource.src = videos[currentVideoIndex].getAttribute('data-src');
+			 videoPlayer.load();
+             videoPlayer.play();
+		});
+		
         
         // 監聽影片播放完畢事件
         videoPlayer.addEventListener('ended', function() {
